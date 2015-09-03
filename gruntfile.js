@@ -50,6 +50,12 @@ module.exports = function (grunt) {
         options: {
           livereload: true
         }
+ clientJS: {
+        files: defaultAssets.client.js,
+        tasks: ['jshint'],
+        options: {
+          livereload: true
+        }
       },
       clientCSS: {
         files: defaultAssets.client.css,
